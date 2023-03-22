@@ -193,7 +193,7 @@ int factorial( int n )
 	return ( n == 1 || n == 0 ) ? 1 : factorial( n - 1 ) * n;
 }
 
-int main( int argc, char const* argv[] )
+int main( [[maybe_unused]] int argc, [[maybe_unused]] char const* argv[] )
 {
 	{
 		cout << "std map with default allocator" << endl;

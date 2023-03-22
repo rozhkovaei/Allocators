@@ -180,11 +180,12 @@ public:
     }
     
 private:
-    Node* head = nullptr;
-    Node* tail = nullptr;
     
     Alloc allocator;
     ReboundAllocType rebound_allocator;
+    
+    Node* head = nullptr;
+    Node* tail = nullptr;
 };
 
 int factorial( int n )
